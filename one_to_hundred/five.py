@@ -10,7 +10,15 @@
 # The output of the program should be:
 # 18,22,24
 
-import math
 
-def cal_squre(d_seq):
-    # TODO
+D=input()
+D=D.split(',')
+C=50
+H=30
+Q=[]
+for i in D:
+    Q.append( int(( (2 * C * int(i) )/H )**0.5) )
+
+for i in range(0,len(Q)-1):
+    print(Q[i],end=',')
+print(Q[len(Q)-1])
