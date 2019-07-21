@@ -10,7 +10,9 @@
 # The output of the program should be:
 # 18,22,24
 
-
+"""
+by YjY
+"""
 D=input()
 D=D.split(',')
 C=50
@@ -22,3 +24,16 @@ for i in D:
 for i in range(0,len(Q)-1):
     print(Q[i],end=',')
 print(Q[len(Q)-1])
+
+
+# by Lbs
+import math
+
+C = 50
+H = 30
+input_val = input()
+Q = [str(int(math.sqrt(2 * C * float(item) / H))) for item in input_val.split(',')]
+print(','.join(Q))
+
+# by Zc
+# TODO
